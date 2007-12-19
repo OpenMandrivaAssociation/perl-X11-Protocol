@@ -1,7 +1,7 @@
 %define module  X11-Protocol
 %define name    perl-%{module}
 %define version 0.56
-%define release %mkrel 1
+%define release %mkrel 2
 
 Name:           %{name}
 Version:        %{version}
