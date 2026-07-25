@@ -2,14 +2,14 @@
 %define upstream_version 0.56
 
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version %{upstream_version}
-Release:	4
+Version:	%{upstream_version}
+Release:	5
 
 Summary:	Perl module for the X Window System Protocol
 License:	Artistic
 Group:		Development/Perl
-Url:		https://search.cpan.org/dist/%{upstream_name}
-Source0:	http://www.cpan.org/modules/by-module/X11/%{upstream_name}-%{upstream_version}.tar.bz2
+Url:		https://metacpan.org/dist/X11-Protocol
+Source0:	https://cpan.metacpan.org/authors/id/S/SM/SMCCAM/X11-Protocol-%{upstream_version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
