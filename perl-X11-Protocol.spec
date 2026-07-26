@@ -1,15 +1,13 @@
 %define upstream_name    X11-Protocol
-%define upstream_version 0.56
-
 Name:		perl-%{upstream_name}
-Version:	%{upstream_version}
-Release:	5
+Version:	0.56
+Release:	6
 
 Summary:	Perl module for the X Window System Protocol
 License:	Artistic
 Group:		Development/Perl
 Url:		https://metacpan.org/dist/X11-Protocol
-Source0:	https://cpan.metacpan.org/authors/id/S/SM/SMCCAM/X11-Protocol-%{upstream_version}.tar.gz
+Source0:	https://cpan.metacpan.org/authors/id/S/SM/SMCCAM/X11-Protocol-%{version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
@@ -19,7 +17,7 @@ BuildArch:	noarch
 This is a module for the X Window System Protocol.
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%setup -q -n %{upstream_name}-%{version}
 
 %build
 perl Makefile.PL INSTALLDIRS="vendor" 
@@ -40,9 +38,7 @@ perl Makefile.PL INSTALLDIRS="vendor"
 %changelog
 * Tue Jul 28 2009 Jérôme Quelin <jquelin@mandriva.org> 0.560.0-1mdv2010.0
 + Revision: 401879
-- rebuild using %%perl_convert_version
-
-* Fri Aug 01 2008 Thierry Vignaud <tvignaud@mandriva.com> 0.56-6mdv2009.0
+- rebuild using %0.56 Fri Aug 01 2008 Thierry Vignaud <tvignaud@mandriva.com> 0.56-6mdv2009.0
 + Revision: 258794
 - rebuild
 
