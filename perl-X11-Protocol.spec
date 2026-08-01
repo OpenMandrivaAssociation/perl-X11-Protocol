@@ -2,7 +2,7 @@
 %define upstream_version 0.56
 Name:		perl-%{upstream_name}
 Version:	0.56
-Release:	2
+Release:	3
 
 Summary:	Perl module for the X Window System Protocol
 License:	Artistic
@@ -29,6 +29,7 @@ perl Makefile.PL INSTALLDIRS="vendor"
 set +e
 # test needs a running X server
 :  # soft check
+make test || :
 %install
 %makeinstall_std
 
